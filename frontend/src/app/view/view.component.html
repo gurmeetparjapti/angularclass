@@ -1,0 +1,41 @@
+
+<section>
+    <div class="container p-4 mt-5">
+        <div class="row">
+            <div class="mb-3">
+                <h3 class="border text-center bg-warning">This is the Emplpyee id:{{record._id}}</h3>
+                <button class="btn btn-sm btn-success p-3" [routerLink]="['/crud']">back</button>
+            </div>
+            <table>
+               <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Phone</th>
+                    <th>Password</th>
+                  </tr>
+               </thead> 
+                <tbody>
+                    <tr>
+                        <td>{{record._id}}</td>
+                        <td>{{record.username}}</td>
+                        <td>{{record.email}}</td>
+                        <td>{{record.age}}</td>
+                        <td>{{record.phone}}</td> 
+                        <td>{{record.password}}</td>
+                      </tr>
+                </tbody>
+              </table>
+              <button class="btn btn-warning mt-2 p-2" type="button">Example button </button>
+        </div>
+    </div>
+    
+    
+    
+    <div class='air air1'></div>
+    <div class='air air2'></div>
+    <div class='air air3'></div>
+    <div class='air air4'></div>
+  </section>

@@ -1,0 +1,56 @@
+<p>updatedata works!</p>
+<div class="container-fluid mt-5 w-50">
+    <div class="row">
+        <form [formGroup]="mybulder" (ngSubmit)="myupdate()">
+            <!-- Email input -->
+            <div class="form-outline mb-2">
+              <label >username</label>
+              <input  type="text" class="form-control" formControlName="username" />
+            </div>
+            <div class="form-outline mb-2 ">
+              <label >Email address</label>
+              <input type="email" class="form-control" formControlName="email" />
+            </div>
+            <!-- Password input -->
+            <div class="form-outline mb-2 ">
+              <label>mm/dd/yyyy</label>
+              <input type="date" class="form-control" formControlName="age" />
+            </div>
+            <div class="form-outline mb-2">
+              <label >Phone no</label>
+              <input type="password" class="form-control" formControlName="phone" />
+            </div>
+            <div class="form-outline mb-2">
+              <label >Password</label>
+              <input type="password" class="form-control" formControlName="password" />
+              <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+
+            <!-- Submit button -->
+            <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>Not a member? <a href="#">Register</a></p>
+              <p>or sign up with:</p>
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-google" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+    </div>
+</div>
